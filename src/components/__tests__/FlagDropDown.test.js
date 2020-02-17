@@ -101,14 +101,14 @@ describe('FlagDropDown', function() {
 
     const result = [
       {
-        name: 'South Korea (대한민국)',
+        name: 'South Korea',
         iso2: 'kr',
         dialCode: '82',
         priority: 0,
         areaCodes: null,
       },
       {
-        name: 'Taiwan (台灣)',
+        name: 'Taiwan',
         iso2: 'tw',
         dialCode: '886',
         priority: 0,
@@ -466,7 +466,7 @@ describe('FlagDropDown', function() {
       currentNumber: '+8109012345678',
       fullNumber: '+81 90-1234-5678',
       isValid: true,
-      name: 'Japan (日本)',
+      name: 'Japan',
       iso2: 'jp',
       dialCode: '81',
       priority: 0,

@@ -603,6 +603,7 @@ class IntlTelInput extends Component {
     const current = this.flagDropDown.querySelectorAll('.highlight')[0];
     const prevElement = current ? current.previousElementSibling : undefined;
     const nextElement = current ? current.nextElementSibling : undefined;
+
     let next = key === this.keys.UP ? prevElement : nextElement;
 
     if (next) {
@@ -753,6 +754,7 @@ class IntlTelInput extends Component {
 
     // try and extract valid dial code from input
     const dialCode = this.getDialCode(number);
+
     let countryCode = null;
 
     if (dialCode) {
@@ -908,6 +910,7 @@ class IntlTelInput extends Component {
       this.selectedCountryData
     ) {
       const numberType = window.intlTelInputUtils.numberType[props.numberType];
+
       let placeholder = this.selectedCountryData.iso2
         ? window.intlTelInputUtils.getExampleNumber(
           this.selectedCountryData.iso2,
@@ -957,6 +960,7 @@ class IntlTelInput extends Component {
       const elementTop = utils.offset(element).top;
       const elementBottom = elementTop + elementHeight;
       const middleOffset = containerHeight / 2 - elementHeight / 2;
+
       let newScrollTop = elementTop - containerTop + container.scrollTop;
 
       if (elementTop < containerTop) {
